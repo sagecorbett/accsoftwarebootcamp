@@ -1,0 +1,64 @@
+// COMPONENT: Header
+.team-header {
+	height: 40vh;
+	background-color: $color-yellow;
+	padding: 2%;
+
+	@include respond(tab-land) {
+		height: 45%;
+	}
+
+	&__btn-box {
+		margin: 2%;
+	}
+}
+
+// COMPONENT: TeamMembers 
+.team-members {
+	padding: 10%;
+
+	&__btn-box {
+		padding: 5%;
+	}
+}
+
+// COMPONENT Member
+.member {
+	position: relative;
+	transition: all .4s;
+
+	&:hover {
+		transform: scale(1.4);
+	}
+
+	@include respond(tab-land){
+		&:hover {
+			transform: scale(1);
+		}
+	}
+
+	&__img-box {
+		position: relative;
+		height: 100%;
+		&--img {
+			max-width: 100%;
+			border-radius: 100%;
+			z-index: 40;
+		}
+
+		&:hover .member__img-box--description {
+			display: block;
+		}
+		
+		&--description {
+			display: none;
+			position: absolute;
+			height: 100%;
+			z-index: 100;
+			background-color: $color-white;
+			animation: FadeIn .2s ease-in;
+			overflow: scroll;
+			align-items: center;
+		}
+	}
+}

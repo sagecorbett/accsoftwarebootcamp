@@ -1,0 +1,49 @@
+// FOR COMPONENT TestDrive
+.test-drive {
+	height: 100vh;
+	background-color: $color-yellow;
+	padding: 5%;
+
+	@include respond(tab-land) {
+		height: 45%;
+	}
+
+	&__content-box {
+		height: 80vh;
+		background-color: $color-white;
+		padding: 2% 15%;
+
+		@include respond(tab-land) {
+			height: 45%;
+			text-align: center;
+		}
+	}
+
+	&__btn-box {
+		margin: 5%;
+	}
+
+	&__text-box {
+		&:not(:last-child) {
+			margin-bottom: 5%;
+		}
+	}
+}
+
+// FOR COMPONENT Video
+.video {
+	height: 130vh;
+	background-color: $color-white;
+
+	@include respond(tab-land) {
+		height: 45%;
+	}
+
+	&__content-box {
+		padding: 10%;
+	}
+
+	&__btn-box {
+		margin: 5%;
+	}
+}

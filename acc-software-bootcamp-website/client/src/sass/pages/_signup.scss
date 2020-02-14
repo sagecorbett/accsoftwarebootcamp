@@ -1,0 +1,17 @@
+// COMPONENT: signup
+.signup {
+	height: 100%;
+	background-color: $color-blue;
+	color: $color-white;
+	padding: 2% 10%;
+
+	@include respond(tab-land){
+			height: 45%;
+	}
+
+	&__heading-box {
+		&--btn-box {
+			padding: 2%;
+		}
+	}
+}

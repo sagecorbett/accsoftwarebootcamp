@@ -1,0 +1,38 @@
+// The original wix website uses this animation for every page
+// I am not gonna implement it, for now at least.
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+// used for acc logo at the top of the page.
+@keyframes Bounce {
+	0% {
+		transform: translateY(-100%);
+	}
+	80% {
+		transform: translateY(5%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes BounceRight {
+	0% {
+		transform: translateX(-100%);
+	}
+	80% {
+		transform: translateX(5%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+

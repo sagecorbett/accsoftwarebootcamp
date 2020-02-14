@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+
+	@include respond(phone) {
+		text-align: center;
+	}
+	&__social-box {
+		margin: 3rem;
+	}
+
+	&__link {
+		color: $color-black;
+		font-size: 1.6rem;
+
+		&:link,
+		&:visited {
+		}
+	}
+}

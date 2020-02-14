@@ -1,0 +1,146 @@
+// COMPONENT: Hero
+.hero {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-grey, 0.4),
+			rgba($color-grey-dark, 0.4)
+		),
+		url('../../assets/images/hero.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+
+	&__heading {
+		margin-top: 12%;
+		transition: all .5s;
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+
+	@include respond(phone) {
+		height: 50vh;
+	}
+}
+
+// COMPONENT: About
+.about {
+	height: 100%;
+	position: relative;
+	padding: 2%;
+
+	@include respond(tab-land) {
+		height: 45%;
+		padding: 0;
+	}
+
+	&__description-box {
+		background-color: $color-blue;
+		padding: 3%;
+		height: 75%;
+		max-width: 29%;
+		position: absolute;
+		top: 13%;
+		left: 47%;
+		color: $color-white;
+
+		transition: all .5s;
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		@include respond(tab-land){
+			max-width: 100%;
+			height: 100%;
+			width: 100%;
+			position: relative;
+			top: 0;
+			left: 0;
+			text-align: center;
+			&:hover {
+			transform: none;
+			}
+		}
+	}
+
+		&__img-box {
+		width: 35%;
+		position: relative;
+		top: 9%;
+		left: 17%;
+		&__photo {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+
+		@include respond(tab-land){
+			display: none;
+		}
+	}
+
+	&__btn-box {
+		margin: 3% 0;
+	}
+}
+
+// FOR COMPONENT: Contact
+.contact {
+	background-color: $color-yellow;
+	padding: 5%;
+	height: 100%;
+	width: 100%;
+
+	@include respond(tab-land) {
+		height: 45%;
+	}
+
+	@include respond(phone) {
+		background-color: $color-white;
+		padding: 0%;
+	}
+
+	&__row {
+		width: 100%;
+	}
+
+	&__box {
+		background-color: $color-white;
+		height: 80vh;
+		display: flex;
+		padding: 5rem;
+		@include respond(tab-port) {
+			padding: 1rem;
+		}
+	}
+
+	&__box-header {
+		color: $color-grey-dark;
+	}
+
+	&__box-form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		@include respond(tab-port) {
+			height: 70%;
+		}
+	}
+
+	&--custom {
+		height: 100%;
+	}
+
+	&__send-btn {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		font-size: 1.6rem;
+		&:focus {
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+// COMPONENT: FAQheader
+.faq-header {
+	height: 40%;
+	background-color: $color-yellow;
+	padding: 2% 15%;
+
+	@include respond(tab-land){
+		height: 45%;
+	}
+
+	&__btn-box {
+		margin: 2%;
+	}
+}
+
+// COMPONENT: FAQ
+.faq {
+	&__grid-box {
+		padding: 5% 10%;
+		@include respond(tab-port){
+			padding: 5%;
+		}
+	}
+
+	&__btn-box {
+		padding: 5%;
+	}
+}

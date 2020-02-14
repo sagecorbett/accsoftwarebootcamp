@@ -1,0 +1,31 @@
+// Abstracts
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base styles
+@import 'base/base';
+@import 'base/animations';
+@import 'base/utilities';
+@import 'base/typography';
+
+// Components 
+@import 'components/button';
+@import 'components/input';
+@import 'components/spinner';
+
+
+// Layout
+@import 'layout/backdrop';
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+@import 'pages/signup';
+@import 'pages/FAQ';
+@import 'pages/education';
+@import 'pages/trialclass';
+@import 'pages/team';
+@import 'pages/chat';

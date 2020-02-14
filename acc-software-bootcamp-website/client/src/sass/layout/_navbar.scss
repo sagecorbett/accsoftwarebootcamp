@@ -1,0 +1,107 @@
+// THIS HANDLES DESKTOP NAVBAR
+.navbar {
+	background-color: $color-grey;
+	display: flex;
+	justify-content: center;
+
+
+	&__item {
+		display: inline-block;
+		padding: 1rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-black;
+		font-size: 1.2rem;
+		transition: all 0.2s;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+	&-desktop {
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&-mobile {
+		display: none;
+
+		@include respond(phone) {
+			display: inherit;
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+}
+
+// THIS IS FOR NAVBAR MOBILE STYLES
+.navbar-mobile {
+	position: fixed;
+	z-index: 400;
+	&__open {
+		background-image: linear-gradient(
+			to left,
+			rgba($color-grey, .95),
+			rgba($color-grey, .95)
+		);
+		position: fixed;
+		width: 70%;
+		height: 110vh;
+		z-index: 400;
+		animation: BounceRight .4s ease-in;
+	}
+	
+	&__btn {
+		position: fixed;
+		margin: 2%;
+		padding: 2%;
+		border-radius: 50%;
+		font-size: 3rem;
+		z-index: 500;
+		transition: all .2s;
+
+		&--open {
+			color: $color-white;
+		}
+	}
+
+	&__list-box {
+		margin: 25% 0;	
+	}
+
+	&__item {
+		display: block;
+		padding: 1rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-white;
+		font-size: 3rem;
+		transition: all 0.2s;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+}
+
+.header {
+	margin-bottom: .5rem;
+	&__logo-img {
+		max-width: 100%;
+		height: 8rem;
+		margin-bottom: .5rem;
+		margin-top: .5rem;
+		animation: Bounce .6s;
+	}
+}
+
+// This is a built in class from NavLink used to show what page you are on in the navbar
+.active {
+	color: $color-blue;
+}

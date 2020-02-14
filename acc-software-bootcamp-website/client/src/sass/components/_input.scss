@@ -1,0 +1,55 @@
+.input {
+	font-size: 2rem;
+	margin: 1rem;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: $color-grey-dark solid 1px;
+	background-color: transparent;
+	width: 90%;
+	margin: auto;
+
+	&--white {
+		color: $color-white;
+		border-bottom: $color-white solid 2px;
+		&::placeholder {
+			color: $color-white;
+		}
+	}
+
+	@supports (-moz-appearance:none) {
+	 &--text-area { height: 10%; } 
+	}
+
+	&--text-area {
+		resize: none;
+		@include respond(tab-port) {
+
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+
+
+// CHECK BOX INPUT ON CONTACT COMPONENT
+.checkbox {
+	font-size: 1.4rem;
+	color: $color-grey-dark;
+	margin: 1rem 2.5rem;
+	width: 90%;
+	color: $color-grey-dark;
+
+	@include respond(tab-port) {
+		margin: 1rem 2rem;
+	}
+}
+
+

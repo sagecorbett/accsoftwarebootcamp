@@ -1,0 +1,92 @@
+// btn allows you to create any styled button you would like by adding additional 
+// classes to style it in the direction you want.
+
+// CLASS BREAKDOWN:
+// .btn - is the base styling for the button
+// .btn--white - will give a white background that darkens to grey when hovered
+// .btn--black - a black button that when hovered turns to lighter grey
+// .btn--transparent-white - a transparent button that turns white when hovered
+// .btn--transparent-black - a transparent button that turns black when hovered
+// 		.btn--transparent-black--yellow - text color changes to yellow when hovered
+// 		.btn--transparent-black--white - text color changes to white when hovered
+
+// .btn--lg - will make a large button
+// .btn--sm - will make a small button that turns into a large on small screens
+// .btn--margin - will give 2% margin all around it
+
+.btn {
+	transition: all 0.5s;
+	&, // need the & so that other elements will be styled like anchor tags too ( Chat page )
+  &:link,
+  &:visited {
+		text-decoration: none;
+		font-size: 1.4rem;
+		border-radius: 5rem; // to round the sides
+		display: inline-block;
+		padding: 1rem;
+		cursor: pointer;
+	}
+
+	&--white {
+		background-color: $color-white;
+		color: $color-grey-dark;
+		border: 3px solid $color-white;
+		&:hover {
+			background-color: darken($color-white, 25%);
+			border: 3px solid darken($color-white, 25%);
+		}
+	}
+
+	&--black {
+		background-color: $color-grey-dark;
+		color: $color-white;
+		border: 2px solid $color-grey-dark;
+		&:hover {
+			background-color: lighten($color-grey-dark, 25%);
+			border: 2px solid lighten($color-grey-dark, 25%);
+		}
+	}
+
+	&--margin {
+		margin: 2%;
+	}
+
+	&--transparent-white {
+		background-color: transparent;
+		color: $color-white;
+		border: 3px solid $color-white;
+
+		&:hover {
+			color: $color-grey;
+			background-color: $color-white;
+		}
+	}
+
+	&--transparent-black {
+		background-color: transparent;
+		color: $color-grey-dark;
+		border: 1px solid $color-grey-dark;
+
+		&--yellow:hover {
+			color: $color-yellow;
+			background-color: $color-grey-dark;
+		}
+
+		&--white:hover {
+			color: $color-white;
+			background-color: $color-grey-dark;
+		}
+	}
+
+	&--lg {
+		text-align: center;
+		width: 25rem;
+	}
+
+	&--sm {
+
+		@include respond(phone){
+			width: 25rem;
+		}
+	}
+}
