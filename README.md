@@ -10,13 +10,13 @@ This project was built using:
 - Sass/SCSS to style every page
 - Deployed through Heroku
 
-
+Example home page 
 ![home page](./demoScreenShots/home.png?raw=true "Home page example")
 
 
+Example Instructors page
+![instructors page](./demoScreenShots/instructorpage.png?raw=true "instructor page example")
 
-![instructors page](./demoScreenShots/home.png?raw=true "instructor page example")
 
-
-
+100% mobile friendly
 ![mobile friendly](./demoScreenShots/mobile.png?raw=true "Mobile friendly")
