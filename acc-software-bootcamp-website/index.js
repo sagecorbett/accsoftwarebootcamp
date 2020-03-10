@@ -16,11 +16,6 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.json());
 
 
-
-app.get('/', (req, res) => {
-    res.send('test')
-})
-
 // FOR HOME PAGE CONTACT
 app.post('/contact', (req, res) => {
     const { name, subject, message, syllabus, phone, email } = req.body;
