@@ -1,7 +1,5 @@
 # ACCSoftwareBootcamp.com
 
-Example code for a work project I did: accsoftwarebootcamp.com.
-
 This project was built using:
 - Node 
 - Nodemailer to send emails with user contact information
@@ -11,13 +9,15 @@ This project was built using:
 - Sass/SCSS to style every page
 - Deployed through Heroku
 
-## Example home page 
-![home page](./demoScreenShots/home.png?raw=true "Home page example")
+For security reasons the server file has been changed a bit.
+
+## Desktop View 
+
+![Gif showing Desktop layout](./assets/ACC-Desktop.gif)
 
 
-## Example Instructors page
-![instructors page](./demoScreenShots/instructorpage.png?raw=true "instructor page example")
 
 
-## 100% mobile friendly
-![mobile friendly](./demoScreenShots/mobile.png?raw=true "Mobile friendly")
+## Mobile View
+
+![Gif showing degrees](./assets/ACC-Mobile.gif)
