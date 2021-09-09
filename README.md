@@ -9,7 +9,7 @@ This project was built using:
 - Sass/SCSS to style every page
 - Deployed through Heroku
 
-For security reasons the server file has been changed a bit.
+For security reasons the server code is not included.
 
 ## Desktop View 
 
